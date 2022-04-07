@@ -56,6 +56,6 @@ print("Username: " + username)
 
 #New User Contact Information
 
-print("How;s it going " + first_name + " " + last_name 
+print("How's it going " + first_name + " " + last_name 
 + "Email: " + email
 )
