@@ -59,3 +59,4 @@ print("Username: " + username)
 contact_card = ("How's it going " + first_name + " " + last_name 
 + "Email: " + email + "Username: " + username)
 
+print(contact_card)
