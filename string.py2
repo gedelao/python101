@@ -30,7 +30,7 @@ def new_user(first_name, last_name, domain):
     email_gen("Gerardo", "Delao", "domain")
     print("Username: ")
     contact_card("Gerardo", "Delao")
-    new_user('Gerardo', 'Delao', 'spotify')
+new_user('Gerardo', 'Delao', 'spotify')
 
 
   
