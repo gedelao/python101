@@ -39,11 +39,23 @@ last_name = "Delao"
 
 #You can use your own name or someone else's. 
 # Use those two variables to print a greeting that uses the firstname and lastname variables in the output.
-#input("How are you doing? " + first_name + " " + last_name)
+print("How's it going " + first_name + " " + last_name)
 
 
 
 # Using the two variables you set earlier, generate a company email address that follows the pattern: 
 # "first initial, period, last name @ company domain". Assign the result to a new variable called email 
-# and print the email to the console.
-print(first_name.lower()[0] + "." + last_name + "@ymail.com ")
+#and print the email to the console.
+
+email = first_name[0] + "." + last_name + "@gmail.com"
+print("Email: " + email)
+
+#Username Generator
+username = first_name[0:3] + "_" + last_name[0:5]
+print("Username: " + username)
+
+#New User Contact Information
+
+print("How;s it going " + first_name + " " + last_name 
++ "Email: " + email
+)

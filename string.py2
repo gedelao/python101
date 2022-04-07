@@ -1,17 +1,17 @@
 #Input accepts user input and returns that value as a string
 # which can be stored in a variable and used later
 
-#from unicodedata import name
+
 
 
 def say_hello(first_name, last_name):
-    print(f'Hello, {first_name} {last_name} welcome to the introduction to function')
+    print(f'Hello, {first_name} {last_name}  welcome to the introduction to function! ')
     say_hello('Gerardo', 'Delao')
     say_hello('Erin', 'Cranston')
     
 #username Generator
 
-def email_gen(first_name, last_name):
+def email_gen(first_name, last_name, domain):
     print(f'{first_name[0].lower()}.{last_name.lower()}.com')
     email_gen('Gerardo', 'Delao', 'Spotify')
     email_gen('Erin', 'Cranston', 'Facebook')
@@ -24,8 +24,13 @@ def contact_card(first_name, last_name):
 
 #New User Contact Information
 
-def introduction(first_name, last_name):
-    print(f'Welcome to E Corp, {first_name}')
+def new_user(first_name, last_name, domain):
+    print(f"Welcome to E Corp, {first_name} {last_name}")
+    print("Email: ")
+    email_gen("Gerardo", "Delao", "domain")
+    print("Username: ")
+    contact_card("Gerardo", "Delao")
+    new_user('Gerardo', 'Delao', 'spotify')
 
 
   
