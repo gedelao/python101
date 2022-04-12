@@ -75,40 +75,12 @@
 #         sent_dict[index] = 0
 #     sent_dict[index] += 1
 #     print(sent_dict)
-
-todo = input(""""
-Press 1 to add task
-Press 2 to delete task
-Press 3 to view all tasks
-Press q to quit
-Enter an option:  
-""").lower()
-
-if todo == 1:
-  add_task_input()
-elif todo == 2:
-  delete_task()
-elif todo == 3:
-  view_task()
-elif todo == "q":
-  quit()
-else:
-  print("Enter a valid option")
-
-## add task
-
-def add_task_input():
-  print("Add Task")
-  priorities = ["low", "medium", "high"]
-  title = input("Enter A task: ")
-  priorities_input = {f'Enter a priority for {priorities}.'}
-  while priorities_input not in priorities and priorities_input != "m":
-    priorities_input = input("You haven't enter a valid property")
-    if priorities_input == "m":
-      display_menu()
-      return
-    add_task_input(title_input, priorities_input)
-      
+while True:
+  print("Doing stuff")
+  break
+elif:
+while == True:
+ print("Eating food")
 
 
 
