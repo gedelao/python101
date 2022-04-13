@@ -127,7 +127,7 @@ while menu_choice != 5:
         numbers[name] = phone
     elif menu_choice == 3:
         print("Remove Name and Number ")
-        name = input("Delete entry for ",name)
+        name = input("Delete entry for: ")
         if name in numbers:
             del numbers[name]
         else:
@@ -139,9 +139,8 @@ while menu_choice != 5:
             print("Found entry for", name + ":" + " "+ numbers[name], )
         else:
             print(name, "was not found")
-    elif menu_choice != 5:
-            print("Invalid Entry")
-            print_menu()
+    elif menu_choice == 5:
+        print_menu()
 
 
 
