@@ -103,10 +103,10 @@ def print_menu():
     print('''
     Electronic Phone Book 
     =====================
-    1. Look up an entry
+    1. List all entry
     2. Set an entry
     3. Delete an entry
-    4. List all entries
+    4. List up an entry
     5. Quit
     ''')
 
@@ -114,32 +114,32 @@ numbers = {}
 menu_choice = 0
 print_menu()
 while menu_choice != 5:
-    menu_choice = int(input("What do you want to do (1-5)?: "))
-    if menu_choice == 1:
+    menu_choice = int(input("What do you want to do (1-5)?: ")) #### Menu
+    if menu_choice == 1: ### list all entry
         print("Phone Numbers:")
         for i in numbers.keys():
             print("Name: ", i, "\t Number: ", numbers[i])
         print()
-    elif menu_choice == 2:
+    elif menu_choice == 2:   ### set an entry
         print("Add Name and Number ")
         name = input("Name: ")
         phone = input("Number: ")
         numbers[name] = phone
-    elif menu_choice == 3:
+    elif menu_choice == 3:         ##### Removes entries
         print("Remove Name and Number ")
         name = input("Delete entry for: ")
         if name in numbers:
             del numbers[name]
         else:
             print(name, "was not found ")
-    elif menu_choice == 4:
+    elif menu_choice == 4: #### look up numbers
         print("Lookup number by name ")
         name = input("Name: ")
         if name in numbers:
             print("Found entry for", name + ":" + " "+ numbers[name], )
         else:
             print(name, "was not found")
-    elif menu_choice == 5:
+    elif menu_choice == 5: ### exit
         print_menu()
 
 
